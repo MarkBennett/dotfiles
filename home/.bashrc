@@ -83,6 +83,10 @@ alias la='ls -A'
 alias l='ls -CF'
 alias be='bundle exec'
 
+# Add an "alert" alias for long running commands.  Use like so:
+#   sleep 10; alert
+alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+
 # Alias definitions.
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
@@ -99,6 +103,20 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
+function parse_git_branch {
+  ref=$(git symbolic-ref HEAD 2> /dev/null) || return
+  echo "("${ref#refs/heads/}")"
+}
+
+RED="\[\033[0;31m\]"
+YELLOW="\[\033[0;33m\]"
+GREEN="\[\033[0;32m\]"
+BLUE="\[\033[0;36m\]"
+WHITE="\[\033[0;37m\]"
+
+PS1="\n$BLUE\$(date +%H:%M) \w$YELLOW \$(parse_git_branch)\n$GREEN\$ $WHITE"
+
+PATH=$PATH:node_modules/.bin
 export PATH=$HOME/local/bin:$PATH
 export npm_config_userconfig=$HOME/.config/npmrc
 
