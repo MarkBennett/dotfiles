@@ -1,3 +1,5 @@
 [user]
 	name = Mark Bennett
 	email = mark@burmis.ca
+[color]
+	ui = true
