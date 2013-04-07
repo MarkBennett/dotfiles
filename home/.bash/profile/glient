@@ -1,0 +1,5 @@
+# This assumes that gclient tools from Webkit have been cloned into ~/local
+# with the command:
+#
+#
+export PATH=~/local/depot_tools:$PATH
