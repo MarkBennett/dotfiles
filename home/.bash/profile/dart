@@ -1,3 +1,4 @@
 # Setup Dart
-export DARTHOME="$HOME/dart/dart-sdk/"
+export DARTHOME="$HOME/Applications/Development/dart/dart-sdk"
 export PATH="$DARTHOME/bin:$PATH"
+export DART_SDK=$DARTHOME

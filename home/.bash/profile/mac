@@ -1,1 +1,2 @@
 export DYLD_LIBRARY_PATH=/Users/mark/opt/oracle/instantclient_11_2/
+export PATH=/usr/local/opt/postgresql/bin/:$PATH
