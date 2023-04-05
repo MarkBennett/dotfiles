@@ -1,8 +1,6 @@
 name: Chore
 about: A task or activity that doesn't change behaviour or fix a bug
-title: ''
 labels: 'chore'
-assignees: ''
 body:
   - type: markdown
     attributes:
