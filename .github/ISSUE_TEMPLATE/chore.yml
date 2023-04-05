@@ -1,5 +1,5 @@
 name: Chore
-about: A task or activity that doesn't change behaviour or fix a bug
+description: A task or activity that doesn't change behaviour or fix a bug
 labels: 'chore'
 body:
   - type: markdown
