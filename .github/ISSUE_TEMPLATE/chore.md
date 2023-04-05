@@ -1,6 +1,6 @@
 ---
 name: Chore
-description: A task or activity that doesn't change behaviour or fix a bug
+about: A task or activity that doesn't change behaviour or fix a bug
 title: ''
 labels: 'chore'
 assignees: ''
