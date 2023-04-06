@@ -14,3 +14,19 @@ body:
       placeholder: "A short description of the task (ie: upgrade a gem, add new chemimicals, etc.)"
     validations:
       required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: "Is any work out of scope?"
+      placeholder: "Is there anything you shouldn't include in this chore?"
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: "Additional Context"
+      placeholder: "Add any other context or screenshots about the feature request here."
+    validations:
+      required: true
