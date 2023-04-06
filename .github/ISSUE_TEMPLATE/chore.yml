@@ -11,7 +11,7 @@ body:
     attributes:
       label: Description
       description: "What needs to be accomplished?"
-      placeholder: "A short description of the task (ie: upgrade a gem, add new chemimicals, etc.)"
+      placeholder: "ie: upgrade a gem, add new chemimicals, etc."
     validations:
       required: true
   - type: textarea
@@ -19,14 +19,14 @@ body:
     attributes:
       label: Scope
       description: "Is any work out of scope?"
-      placeholder: "Is there anything you shouldn't include in this chore?"
+      placeholder: "ie: changing the behaviour of the app, fixing a bug, etc."
     validations:
-      required: true
+      required: false
   - type: textarea
     id: context
     attributes:
-      label: Context
-      description: "Additional Context"
-      placeholder: "Add any other context or screenshots about the feature request here."
+      label: Additional Context
+      description: "Add any other context or screenshots about the feature request here."
+      placeholder: "ie: this was requested by a customer, it allows us to start work on another issue, etc."
     validations:
-      required: true
+      required: false
